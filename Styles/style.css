@@ -1,0 +1,686 @@
+/*general reset style*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*general reset style*/
+/*menu*/
+.menu {
+    background-color: #000000;
+    height: 52px;
+    z-index: 1;
+}
+.menu-main{
+    color: white;
+}
+.menu-main {
+  list-style: none;
+  height: 52px;
+  line-height: 52px;
+  padding-left: 416px;
+}
+.menu-main li {
+    display: inline-block;
+    height: 35px;
+    letter-spacing: -5px;
+}
+.menu-main li:after {
+  content: "|";
+  color: white;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+	color: white;
+}
+.menu-main a.current, .menu-main a:hover{color: #DA2020;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: 16px;
+  left: 50%;
+  background: #DA2020;
+  transition: .8s;
+  z-index: 2;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+/*menu*/
+}
+header {
+    text-transform: uppercase;
+    height: 89px;
+    background-color: white;
+    font-size: 3rem;
+    padding-left: 445px;
+    line-height: 89px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.logo {
+    position: absolute;
+    background-color: #C40000;
+    top: -75px;
+    left: 38px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding: 50px 25px 10px 25px;
+    font-size: 3rem;
+		line-height: 1.3em;
+		z-index: 2;
+}
+/*slider*/
+.slider {
+    background-image: url(../Images/india.png);
+    height: 280px;
+    background-position-y: -102px;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.slider-gallery {
+	background-image: url(../Images/india.png);
+	height: 500px;
+	background-position-y: -102px;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+/*slider*/
+/*links to social platforms*/
+.facebook {
+    position: absolute;
+    height: 47px;
+    width: 47px;
+    top: -21px;
+    left: 1240px;
+}
+.facebook::before {
+    content: '';
+    height: 47px;
+    width: 47px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+.facebook::after {
+    content: '';
+    background-image: url(../Images/facebook.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.facebook:hover::after {
+    content: '';
+    background-image: url(../Images/facebook-hover.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.linkedin {
+    position: absolute;
+    height: 47px;
+    width: 47px;
+    top: -21px;
+    left: 1300px;
+}
+.linkedin::before {
+    content: '';
+    height: 47px;
+    width: 47px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+.linkedin::after {
+    content: '';
+    background-image: url(../Images/linkedin.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.linkedin:hover::after {
+    content: '';
+    background-image: url(../Images/linkedin-hover.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.vkontakte {
+    position: absolute;
+    height: 47px;
+    width: 47px;
+    top: -21px;
+    left: 1360px;
+}
+.vkontakte::before {
+    content: '';
+    height: 47px;
+    width: 47px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+.vkontakte::after {
+    content: '';
+    background-image: url(../Images/vk.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.vkontakte:hover::after {
+    content: '';
+    background-image: url(../Images/vk-hover.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.shadow {
+    content: '';
+    background-image: url(../Images/shadow.png);
+    position: absolute;
+    left: 1120px;
+    top: 17px;
+    width: 397px;
+    height: 52px;
+    z-index: 2;
+}
+/*links to social platforms*/
+.info {
+    position: relative;
+    height: 65px;
+    height: 104px;
+}
+.profile-photo-card {
+    position: absolute;
+    height: 266px;
+    width: 216px;
+    background-color: white;
+    top: -150px;
+    left: 125px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px 2px rgb(155, 155, 155);
+}
+.profile-photo {
+    background-image: url(../Images/photo.png);
+    width: 200px;
+    height: 250px;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-position-x: -61px;
+    background-position-y: -28px;
+    background-size: 314px;
+}
+.title-page {
+	  font-family: 'Roboto Condensed', sans-serif;
+		font-size: 49px;
+}
+.title {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    padding-left: 365px;
+    padding-top: 21px;
+    height: 83px;
+}
+.name {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.intro-title {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.intro {
+    padding: 45px 40px 30px 140px;
+    position: static;
+}
+.intro-info {
+		width: 70%;
+    font-size: 2rem;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'Thasadith', sans-serif;
+}
+.time-info {
+		width: 70%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'Thasadith', sans-serif;
+}
+/*projects page*/
+.projects {
+	box-shadow: 0 0 10px 2px rgb(155, 155, 155);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 34px;
+	width: 80%;
+	margin-bottom: 7px;
+	background-color: white;
+	margin-top: 57px;
+	margin-left: 126px;
+	line-height: 51px;
+	display: block;
+	height: 260px;
+	padding-left: 75px;
+  padding-top: 60px;
+}
+.projects-title {
+    font-size: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 25px;
+}
+.projects-gallery {
+    display: inline-flex;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 1.2rem;
+}
+.project-photo-card {
+    width: 200px;
+    height: 151px;
+    background-size: cover;
+		margin-bottom: 7px;
+    border-radius: 1px;
+    box-shadow: 0 0 11px 1px rgb(190, 190, 190);
+}
+.project-photo-card:hover {
+	width: 200px;
+	height: 151px;
+	background-size: cover;
+	margin-bottom: 7px;
+	border-radius: 1px;
+	box-shadow: 0 0 11px 1px rgb(55, 55, 55);
+}
+.project-photo-1 {
+    width: 191px;
+    height: 141px;
+    background-image: url(../Images/project-1.png);
+    background-size: cover;
+    margin: 5px;
+    position: absolute;
+}
+.project-card {
+    margin-right: 35px;
+}
+.footer {
+    height: 40px;
+    border-top: 2px solid #CCCCCC;
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+    padding-top: 21px;
+    font-size: 1.2rem;
+    background-color: #E9E9E9;
+}
+/*projects page*/
+/*photo slider starts here*/
+.adaptivn-slayder{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 500px;
+  margin-bottom: 11px;
+}
+
+.adaptivn-slayder .parag img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.adaptivn-slayder .prev, .adaptivn-slayder .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.adaptivn-slayder .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.adaptivn-slayder .prev:hover,
+.adaptivn-slayder .next:hover {
+  background-color: rgba(25, 24, 24, 0.8);
+}
+
+.beksun-slayda{
+  position: absolute;
+  color: #f4f4f7;
+  font-size: 38px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 1px #141415, 0 0 1em #141415;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.uneizmen-akemada {
+  text-align: center;
+}
+.noguma-pomoki-kadra{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+	margin-bottom: 10px;
+}
+.deystvuyus,
+.noguma-pomoki-kadra:hover {
+  background-color: #aaa;
+}
+
+.adaptivn-slayder .parag {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+  opacity: .4
+  }
+  to {
+  opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+  opacity: .4
+  }
+  to {
+  opacity: 1
+  }
+}
+/*photo slider ends here*/
+/*contact page starts here*/
+.contact-container {
+	box-shadow: 0 0 10px 2px rgb(155, 155, 155);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 34px;
+	width: 80%;
+  margin: auto;
+	background-color: white;
+  margin-top: 52px;
+	margin-bottom: 52px;
+  margin-left: 126px;
+  padding: 30px;
+  line-height: 51px;
+	display: inline-flex;
+}
+
+.contact-container a {
+	text-decoration: none;
+	color: black;
+}
+.contact-container a:hover{color: #DA2020;}
+.slider-projects {
+	background-image: url(../Images/india.png);
+	height: 460px;
+	background-position-y: -102px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+.projects-gallery a {
+	text-decoration: none;
+	color: black;
+	font-family:'Roboto Condensed', sans-serif;
+}
+.projects-gallery a:hover{color: #DA2020;}
+
+.project-photo-2, .project-photo-3 {
+	width: 191px;
+	height: 141px;
+	background-color: #E9E9E9;
+	background-size: cover;
+	margin: 5px;
+	position: absolute;
+}
+.message-container {
+	float: left;
+	width: 41%;
+  padding-left: 58px;
+  border-left: black;
+  border-left-style: groove;
+  border-left-width: 2px;
+}
+.contacts {
+	float: left;
+	width: 59%;
+}
+.contact-main {
+	background-image: url(../Images/india.png);
+	background-position-y: -102px;
+	background-repeat:no-repeat;
+	background-size: cover;
+	display: flex;
+}
+.submit {
+	background-color: #000000;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	font-size: 30px;
+}
+.reset {
+	background-color: #E5E5E5;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: black;
+	font-size: 20px;
+}
+/*contact page ends here*/
+/*project page starts here*/
+.skills-list {
+	display: flex;
+	width: 80%;
+  margin-inline: auto;
+	background: black;
+	box-shadow: 0 0 10px 2px rgb(155, 155, 155);
+	margin-top: 52px;
+  margin-bottom: 52px;
+	padding: 30px;
+	line-height: 51px;
+}
+.skills-list>ul>li {
+	float:left;
+	width: 25%;
+  margin: 0 0 32px 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	font-size: 34px;
+	background-color: grey;
+	margin-inline: 26px;
+}
+.skills-list>ul {
+	width: 100%;
+}
+#first-project {
+	margin-top: 44px;
+    background-color: #BEBEBE;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-radius: 29px;
+		visibility: hidden;
+}
+.load {
+	height: -webkit-fill-available;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.CV {
+	background-color: #808080;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	margin-right: 7px;
+}
+/*project page ends here*/
+/*faq page starts here*/
+.faq_block {
+	border-style: dotted;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 20px;
+  font-size: 22px;
+	width: 80%;
+	margin-left: auto;
+  margin-right: auto;
+	line-height: 28px;
+	margin-top: 14px;
+  margin-bottom: 10px;
+	display: none;
+}
+.termin {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
+	font-size: 27px;
+	padding-top: 10px;
+}
+.question {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 27px;
+	margin-bottom: 9px;
+}
+.container-faq {
+	overflow: hidden;
+}
+.show {
+  display: block;
+}
+#myBtnContainer {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 27px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btn {
+	font-size: 25px;
+	margin-top: 14px;
+  border: none;
+  outline: none;
+  padding: 7px 14px;
+  background-color: #f1f1f1;
+	color: #4B4B4B;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: black;
+  color: white;
+}
+/*faq page ends here*/

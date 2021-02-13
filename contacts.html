@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel ='stylesheet' href ='Styles/style.css' type= 'text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+            <ul class="menu-main">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+        <div class="shadow"></div>
+    </div>
+    <header><div class="logo">Viktoriia<br />Beloborodova</div>
+      <div class="title-page">Contacts</div>
+        <a href="https://www.facebook.com/" class="facebook"></a>
+        <a href="https://www.linkedin.com/in/viktoriia-beloborodova-624481177/" class="linkedin"></a>
+        <a href="https://vk.com/id26721381" class="vkontakte"></a>
+    </header>
+    <div class="contact-main">
+    <div class="contact-container">
+      <div class="contacts">
+      Address: Helsinki Metropolitan Area, Finland<br>
+      Phone: +3 000 000 00 00<br>
+      Email: <a href="mailto:beloborodova.viktoriia@gmail.com">beloborodova.viktoriia@gmail.com</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/viktoriia-beloborodova-624481177/">@viktoriia-beloborodova-624481177</a>
+      </div>
+      <div class="message-container">
+        Leave a message:
+       <form>
+
+        <label for="first_name">First name:*</label>
+        <input type="text" name="first_name" maxlength="24" required>
+        <br>
+        <label for="last_name">Last name:*</label>
+        <input type="text" name="last_name" id="last_name" maxlength="24" required>
+        <br>
+        Gender:*
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <label for="age">Age (19-99):*</label>
+        <input type="number" name="Age" id="age" min="19" max="99" pattern="19,99" maxlength="2" required>
+        <br>
+        <label for="email">Email:*</label>
+        <input type="email" name="email" id="email" maxlength="49" required>
+        <br>
+        <label for="website">Website address:*</label>
+        <input type="url" name="website_address" id="website" maxlength="49" required>
+        <br>
+        <label for="comment">Your comment:*</label>
+        <textarea type="text" name="comment" id="comment" maxlength="249" placeholder="Enter your comment" required></textarea>
+        <br>
+        <input type="submit" value="Submit" class="submit">
+        <input type="reset" value="Reset" class="reset">
+       </form>
+      </div>
+    </div>
+    </div>
+    <div class="footer">©2021 Designed by me</div>
+</body>
+</html>

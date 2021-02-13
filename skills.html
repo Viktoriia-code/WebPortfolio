@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel ='stylesheet' href ='Styles/style.css' type= 'text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+            <ul class="menu-main">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+        <div class="shadow"></div>
+    </div>
+    <header><div class="logo">Viktoriia<br />Beloborodova</div>
+      <div class="title-page">My skills</div>
+        <a href="https://www.linkedin.com/in/viktoriia-beloborodova-624481177/" class="facebook"></a>
+        <a href="https://ru.linkedin.com" class="linkedin"></a>
+        <a href="https://vk.com/id26721381" class="vkontakte"></a>
+    </header>
+    <div class="contact-main">
+    <div class="skills-list">
+      <button type="button" name="button" class="CV"><a href="Images/CV Beloborodova.pdf" download class="CV">Download CV (PDF)</a></button>
+      <button type="button" name="button" class="CV"><a href="Images/CV Beloborodova 2.docx" download class="CV">Download CV (Word)</a></button>
+      <input type="text" id="skill-input" />
+      <button onclick="addSkill()">Add skill</button>
+      <button onclick="removeSkill()">Remove skill</button>
+      <ul id="dynamic-list">
+        <li id="skill">
+          <div class="stack">HTML</div>
+        </li>
+        <li id="skill">
+          <div class="stack">CSS</div>
+        </li>
+        <li id="skill">
+          <div class="stack">JavaScript</div>
+        </li>
+      </ul>
+    </div>
+</div>
+
+    <div class="footer">©2021 Designed by me</div>
+    <script type="text/javascript">
+    function addSkill(){
+        var ul = document.getElementById("dynamic-list");
+        var input = document.getElementById('skill-input');
+        var li = document.createElement('li');
+        li.setAttribute('id', 'skill');
+        li.appendChild(document.createTextNode(input.value));
+        ul.appendChild(li);
+    }
+
+    function removeSkill(){
+	var ul = document.getElementById("dynamic-list");
+  var skill = document.getElementById("skill");
+  var containerEl = skill.parentNode;
+  containerEl.removeChild(skill);
+}
+
+    </script>
+</body>
+</html>

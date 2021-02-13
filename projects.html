@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My home page</title>
+    <link rel ='stylesheet' href ='Styles/style.css' type= 'text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+            <ul class="menu-main">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+        <div class="shadow"></div>
+    </div>
+    <header><div class="logo">Viktoriia<br />Beloborodova</div><div class="title-page">Latest projects</div>
+        <a href="https://www.linkedin.com/in/viktoriia-beloborodova-624481177/" class="facebook"></a>
+        <a href="https://ru.linkedin.com" class="linkedin"></a>
+        <a href="https://vk.com/id26721381" class="vkontakte"></a>
+    </header>
+    <div class="slider-projects">
+    <div class="projects">
+        <div class="projects-gallery">
+            <a href="https://github.com/Sisilisko/Scandic_school" onmouseover="changeVisibility()" onmouseout="backToNormal()"><div class="project-card"><div class="project-photo-card"><div class="project-photo-1"><div id="first-project">My first project</div></div></div>Project: Language School</div></a>
+            <div class="project-card"><div class="project-photo-card" onclick="showMessage()"><div class="project-photo-2"><img src="Images/placeholder.svg" alt="loading" class="load"></div></div>Project: Coming soon</div>
+            <div class="project-card"><div class="project-photo-card" onclick="showMessage()"><div class="project-photo-3"><img src="Images/placeholder.svg" alt="loading" class="load"></div></div>Project: Coming soon</div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">©2021 Designed by me</div>
+    <script type="text/javascript">
+      function changeVisibility() {
+        var text = document.getElementById('first-project').style.visibility="visible";
+      }
+      function backToNormal() {
+        var text = document.getElementById('first-project').style.visibility="hidden";
+      }
+      function changeBackGroundColor() {
+        var text = docuent.getElementByClass("project-photo-card").style.background
+      }
+      function showMessage() {
+        window.alert("I'm searching new ideas for the future projects!");
+      }
+    </script>
+</body>
+</html>
