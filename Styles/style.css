@@ -132,14 +132,14 @@ header {
 }
 /*slider*/
 .slider {
-    background-image: url(../images/india.png);
+    background-image: url(../Images/india.png);
     height: 280px;
     background-position-y: -102px;
     background-repeat:no-repeat;
     background-size: cover;
 }
 .slider-gallery {
-	background-image: url(../images/india.png);
+	background-image: url(../Images/india.png);
 	height: 500px;
 	background-position-y: -102px;
 	background-repeat:no-repeat;
@@ -165,7 +165,7 @@ header {
 }
 .facebook::after {
     content: '';
-    background-image: url(../images/facebook.svg);
+    background-image: url(../Images/facebook.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -177,7 +177,7 @@ header {
 }
 .facebook:hover::after {
     content: '';
-    background-image: url(../images/facebook-hover.svg);
+    background-image: url(../Images/facebook-hover.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -205,7 +205,7 @@ header {
 }
 .linkedin::after {
     content: '';
-    background-image: url(../images/linkedin.svg);
+    background-image: url(../Images/linkedin.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -217,7 +217,7 @@ header {
 }
 .linkedin:hover::after {
     content: '';
-    background-image: url(../images/linkedin-hover.svg);
+    background-image: url(../Images/linkedin-hover.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -245,7 +245,7 @@ header {
 }
 .vkontakte::after {
     content: '';
-    background-image: url(../images/vk.svg);
+    background-image: url(../Images/vk.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -257,7 +257,7 @@ header {
 }
 .vkontakte:hover::after {
     content: '';
-    background-image: url(../images/vk-hover.svg);
+    background-image: url(../Images/vk-hover.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -269,7 +269,7 @@ header {
 }
 .shadow {
     content: '';
-    background-image: url(../images/shadow.png);
+    background-image: url(../Images/shadow.png);
     position: absolute;
     left: 1120px;
     top: 17px;
@@ -294,7 +294,7 @@ header {
     box-shadow: 0 0 10px 2px rgb(155, 155, 155);
 }
 .profile-photo {
-    background-image: url(../images/photo.png);
+    background-image: url(../Images/photo.png);
     width: 200px;
     height: 250px;
     margin-top: 8px;
@@ -389,7 +389,7 @@ header {
 .project-photo-1 {
     width: 191px;
     height: 141px;
-    background-image: url(../images/project-1.png);
+    background-image: url(../Images/project-1.png);
     background-size: cover;
     margin: 5px;
     position: absolute;
@@ -523,7 +523,7 @@ header {
 }
 .contact-container a:hover{color: #DA2020;}
 .slider-projects {
-	background-image: url(../images/india.png);
+	background-image: url(../Images/india.png);
 	height: 460px;
 	background-position-y: -102px;
 	background-repeat: no-repeat;
@@ -558,7 +558,7 @@ header {
 	width: 59%;
 }
 .contact-main {
-	background-image: url(../images/india.png);
+	background-image: url(../Images/india.png);
 	background-position-y: -102px;
 	background-repeat:no-repeat;
 	background-size: cover;
